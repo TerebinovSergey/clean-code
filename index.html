@@ -12,60 +12,84 @@
       charset="utf-8"
     >
   </head>
-  <body>
-    <header class="aaa">
+  <body class="b-page">
+    <header class="b-header b-page__header">
       <img
+        class="b-header__img"
         src="./eisenhower-matrix.jpg"
         alt="the eisenhower matrix"
       >
       <a
+        class="b-header__link"
         class="more_inf"
         href="https://goal-life.com/page/method/matrix-eisenhower"
       >
         Want more details?
       </a>
     </header>
-    <section class="centered-main-page-element">
-      <section>
-        <h3>Add Item</h3>
-        <div class="task-row-wrapper">
-          <input id="new-task"class="task" type="text">
-          <button>Add</button>
+    <section class="b-tasks b-page__tasks">
+      <section class="b-tasks__add-task">
+        <h3 class="b-title b-add-task__title">Add Item</h3>
+        <div class="b-new-task b-add-task__new-task">
+          <input class="b-input-text b-new-task__input" type="text">
+          <button class="b-btn b-new-task__btn">Add</button>
         </div>
       </section>
-      <section>
-        <h3>Todo</h3>
-        <ul id="incompleteTasks">
-          <li>
-            <input type="checkbox">
-            <label class="task">Pay Bills</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
-              <img src="./remove.svg" alt="Button delete">
+      <section class="b-tasks__tasks-todo">
+        <h3 class="b-title b-tasks-todo__title">Todo</h3>
+        <ul class="b-task-list b-tasks-todo__task-list">
+          <li class="b-task">
+            <input type="checkbox" class="b-task__checkbox">
+            <label class="b-task__label">Pay Bills</label>
+            <input type="text" class="b-input-text b-task__value">
+            <button class="b-btn b-btn_edit">Edit</button>
+            <button class="b-btn b-task__btn-del">
+              <img
+                class="b-task__img-del"
+                src="./remove.svg"
+                alt="Button delete"
+              >
             </button>
           </li>
-          <li class="editMode">
-            <input type="checkbox">
-            <label class="task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
-            <button class="edit">Save</button>
-            <button class="delete">
-              <img src="./remove.svg" alt="Button delete">
+          <li class="b-task b-task_edit-mode">
+            <input type="checkbox" class="b-task__checkbox">
+            <label class="b-task__label">Go Shopping</label>
+            <input
+              type="text"
+              value="Go Shopping"
+              class="b-input-text b-task__value"
+            >
+            <button class="b-btn b-btn_edit">Save</button>
+            <button class="b-btn b-task__btn-del">
+              <img
+                class="b-task__img-del"
+                src="./remove.svg"
+                alt="Button delete"
+              >
             </button>
           </li>
         </ul>
       </section>
-      <section>
-        <h3>Completed</h3>
-        <ul id="completed-tasks">
-          <li>
-            <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
-              <img src="./remove.svg" alt="Button delete">
+      <section class="b-tasks__tasks-completed">
+        <h3 class="b-title b-tasks-completed__title">Completed</h3>
+        <ul 
+          id="completed-tasks"
+          class="b-task-list b-tasks-completed__task-list"
+        >
+          <li class="b-task b-task-completed">
+            <input type="checkbox" checked class="b-task__checkbox">
+            <label
+              class="b-task__label b-task-completed__label"
+            >See the Doctor
+            </label>
+            <input type="text" class="b-input-text b-task__value">
+            <button class="b-btn b-btn_edit">Edit</button>
+            <button class="b-btn b-task__btn-del">
+              <img
+                class="b-task__img-del"
+                src="./remove.svg"
+                alt="Button delete"
+              >
             </button>
           </li>
         </ul>
